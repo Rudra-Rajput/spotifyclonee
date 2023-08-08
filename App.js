@@ -3,10 +3,8 @@ import {
   Text,
   Image,
   StatusBar,
-  Touchable,
   TouchableOpacity,
   FlatList,
-  ScrollView,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
@@ -17,7 +15,6 @@ import TrackPlayer, {
   usePlaybackState,
   useProgress,
 } from 'react-native-track-player';
-import Modal from 'react-native-modal';
 import SongPlayer from './SongPlayer';
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
